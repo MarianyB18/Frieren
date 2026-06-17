@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <title>Protótipo 2</title>
+</head>
+<body>
+   <video autoplay muted loop class="video">
+      <source src="./src/assets/frieren.fundo.mp4" type="video/mp4">
+   </video>
+    <header>
+        <h1 class="logo">LOJA <span>GEEK</span></h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Mangás</a></li>
+                <li><a href="#">Figures</a></li>
+            </ul>
+        </nav>
+         <div class="carrinho">
+            <span id="contador">Itens:0</span>
+         </div>
+    </header>
+<section class="slider">
+   <article class="slides">
+     <div class="slide active">
+        <img src="./src/assets/beijo.gif" alt="frieren">
+     </div>
+      <div class="slide">
+        <img src="./src/assets/Frieren Sleeping Butterflies GIF - Frieren sleeping Butterflies Sousou no frieren - Discover & Share GIFs.gif" alt="frieren2">
+     </div>
+      <div class="slide">
+        <img src="./src/assets/Himmel The Hero Himmel Frieren GIF - Himmel the hero Himmel frieren Sousou no frieren - GIF を見つけて共有する.gif" alt=" figurefrieren">
+     </div>
+   </article>
+</section>
+
+
+    <main id="container">
+      <h2 class="historia">História</h2>
+      <p>A história de Frieren, uma elfa maga, começa após a derrota do Rei Demônio e a restauração da harmonia no mundo. Cinquenta anos depois, Frieren retorna à capital e descobre que seus antigos companheiros envelheceram. Após uma última aventura para ver a chuva de meteoros, Himmel morre de velhice. No funeral, Frieren expressa culpa por não ter aprendido mais sobre ele. Ela visita seus outros antigos companheiros e aceita ensinar e cuidar de Fern, uma criança órfã que ele havia adotado. Frieren também recebe um convite para viajar para o norte, para o local de descanso das almas, para ver Himmel novamente e expressar seus sentimentos.</p>
+
+          <h2>Produtos do anime</h2>
+          <section class="card">
+            <div class="contcard">
+               <img src="./src/assets/capa1frieren.jpeg" alt="frieren">
+               <article class="conteudo">
+                <h3>Mangá Frieren Vol:1</h3>
+                <p class="preco">R$40,00</p>
+                <button class="comprar" onclick="adicionarCarrinho('FrierenVol1')">comprar</button>
+
+               </article>
+            </div>
+             <div class="contcard">
+               <img src="./src/assets/capavol2frieren.jpeg" alt="frieren2">
+               <article class="conteudo">
+                <h3>Mangá Frieren Vol:2</h3>
+                <p class="preco">R$55,00</p>
+                <button class="comprar" onclick="adicionarCarrinho('FrierenVol2')">comprar</button>
+
+               </article>
+            </div>
+            <div class="contcard">
+               <img src="./src/assets/figurefrieren.jpeg" alt="figurefrieren">
+               <article class="conteudo">
+                <h3>Figure Frieren</h3>
+                <p class="preco">R$300,00</p>
+                <button class="comprar" onclick="adicionarCarrinho('FigureFrieren')">comprar</button>
+               </article>
+            </div>
+               
+          </section>
+    </main>
+
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
