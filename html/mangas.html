@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangás</title>
+    <link rel="stylesheet" href="../src/css/mangas.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">LOJA <span>GEEK</span></h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./mangas.html">Mangás</a></li>
+                <li><a href="#">Figures</a></li>
+            </ul>
+        </nav>
+        <div class="carrinho">
+            <span id="contador">Itens:0</span>
+        </div>
+    </header>
+
+    <main>
+        <section class="slider">
+            <article class="slides">
+                <div class="slide active">
+                    <img src="../src/assets/slide1.gif" alt="frieren">
+                </div>
+                <div class="slide">
+                    <img src="../src/assets/slide2.gif" alt="frieren2">
+                </div>
+                <div class="slide">
+                    <img src="../src/assets/slide3.gif" alt="figurefrieren">
+                </div>
+            </article>
+        </section>
+
+        <section id="container">
+            <div class="filtro">
+                <label for="opcao">Opções</label>
+                <select name="opcao" id="opcao">
+                    <option value="manga">Mangá</option>
+                    <option value="figure">Figures</option>
+                </select>
+            </div>
+
+            <h2>Mangás do anime</h2>
+
+            <section class="card" id="lista-cards">
+
+              
+                <div class="contcard" data-tipo="manga">
+                    <img src="../src/assets/vol1.jpeg" alt="frieren">
+                    <article class="conteudo">
+                        <h3>Mangá Frieren Vol:1</h3>
+                        <p class="preco">R$40,00</p>
+                        <button class="comprar" onclick="adicionarCarrinho('FrierenVol1')">comprar</button>
+                    </article>
+                </div>
+
+                <div class="contcard" data-tipo="manga">
+                    <img src="../src/assets/vol2.jpeg" alt="frieren2">
+                    <article class="conteudo">
+                        <h3>Mangá Frieren Vol:2</h3>
+                        <p class="preco">R$55,00</p>
+                        <button class="comprar" onclick="adicionarCarrinho('FrierenVol2')">comprar</button>
+                    </article>
+                </div>
+
+                <div class="contcard" data-tipo="manga">
+                    <img src="../src/assets/vol3.jpeg" alt="frieren vol 3">
+                    <article class="conteudo">
+                        <h3>Mangá Frieren Vol:3</h3>
+                        <p class="preco">R$39,00</p>
+                        <button class="comprar" onclick="adicionarCarrinho('FrierenVol3')">comprar</button>
+                    </article>
+                </div>
+
+                <div class="contcard" data-tipo="manga">
+                    <img src="../src/assets/volu4.jpeg" alt="frieren vol 4">
+                    <article class="conteudo">
+                        <h3>Mangá Frieren Vol:4</h3>
+                        <p class="preco">R$50,00</p>
+                        <button class="comprar" onclick="adicionarCarrinho('FrierenVol4')">comprar</button>
+                    </article>
+                </div>
+
+                <div class="contcard" data-tipo="manga">
+                    <img src="../src/assets/volu5.jpeg" alt="frieren vol 5">
+                    <article class="conteudo">
+                        <h3>Mangá Frieren Vol:5</h3>
+                        <p class="preco">R$58,00</p>
+                        <button class="comprar" onclick="adicionarCarrinho('FrierenVol5')">comprar</button>
+                    </article>
+                </div>
+
+                <div class="contcard" data-tipo="manga">
+                    <img src="../src/assets/volu6.jpeg" alt="frieren vol 6">
+                    <article class="conteudo">
+                        <h3>Mangá Frieren Vol:6</h3>
+                        <p class="preco">R$56,00</p>
+                        <button class="comprar" onclick="adicionarCarrinho('FrierenVol6')">comprar</button>
+                    </article>
+                </div>
+
+                <div class="contcard" data-tipo="manga">
+                    <img src="../src/assets/vol7.jpeg" alt="frieren vol 7">
+                    <article class="conteudo">
+                        <h3>Mangá Frieren Vol:7</h3>
+                        <p class="preco">R$58,00</p>
+                        <button class="comprar" onclick="adicionarCarrinho('FrierenVol7')">comprar</button>
+                    </article>
+                </div>
+
+                <div class="contcard" data-tipo="manga">
+                    <img src="../src/assets/vol8.jpeg" alt="frieren vol 8">
+                    <article class="conteudo">
+                        <h3>Mangá Frieren Vol:8</h3>
+                        <p class="preco">R$60,00</p>
+                        <button class="comprar" onclick="adicionarCarrinho('FrierenVol8')">comprar</button>
+                    </article>
+                </div>
+
+                <div class="contcard" data-tipo="manga">
+                    <img src="../src/assets/vol9.jpeg" alt="frieren vol 9">
+                    <article class="conteudo">
+                        <h3>Mangá Frieren Vol:9</h3>
+                        <p class="preco">R$54,00</p>
+                        <button class="comprar" onclick="adicionarCarrinho('FrierenVol9')">comprar</button>
+                    </article>
+                </div>
+
+             
+                <div class="contcard" data-tipo="figure">
+                    <img src="../src/assets/figure1.jpeg" alt="figure frieren">
+                    <article class="conteudo">
+                        <h3>Figure Frieren</h3>
+                        <p class="preco">R$300,00</p>
+                        <button class="comprar" onclick="adicionarCarrinho('FigureFrieren')">comprar</button>
+                    </article>
+                </div>
+                           <div class="contcard" data-tipo="figure">
+                    <img src="../src/assets/figure4.jpeg" alt="figure frieren">
+                    <article class="conteudo">
+                        <h3>Figure Frieren</h3>
+                        <p class="preco">R$900,00</p>
+                        <button class="comprar" onclick="adicionarCarrinho('FigureFrieren')">comprar</button>
+                    </article>
+                </div>
+                           <div class="contcard" data-tipo="figure">
+                    <img src="../src/assets/figure5.jpeg" alt="figure frieren">
+                    <article class="conteudo">
+                        <h3>Figure Frieren e Himmelk</h3>
+                        <p class="preco">R$1.500,00</p>
+                        <button class="comprar" onclick="adicionarCarrinho('FigureFrieren')">comprar</button>
+                    </article>
+                </div>
+                           <div class="contcard" data-tipo="figure">
+                    <img src="../src/assets/figure6.jpeg" alt="figure frieren">
+                    <article class="conteudo">
+                        <h3>Figure Stark</h3>
+                        <p class="preco">R$900,00</p>
+                        <button class="comprar" onclick="adicionarCarrinho('FigureFrieren')">comprar</button>
+                    </article>
+                </div>
+                           <div class="contcard" data-tipo="figure">
+                    <img src="../src/assets/figure3.jpeg" alt="figure frieren">
+                    <article class="conteudo">
+                        <h3>Figure Fern</h3>
+                        <p class="preco">R$800,00</p>
+                        <button class="comprar" onclick="adicionarCarrinho('FigureFrieren')">comprar</button>
+                    </article>
+                </div>
+                           <div class="contcard" data-tipo="figure">
+                    <img src="../src/assets/figure2.jpeg" alt="figure frieren">
+                    <article class="conteudo">
+                        <h3>Figure Frieren</h3>
+                        <p class="preco">R$600,00</p>
+                        <button class="comprar" onclick="adicionarCarrinho('FigureFrieren')">comprar</button>
+                    </article>
+                </div>
+
+            </section>
+        </section>
+    </main>
+
+    <script src="../src/js/manga.js"></script>
+</body>
+</html>
