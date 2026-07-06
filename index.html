@@ -10,36 +10,46 @@
    <video autoplay muted loop class="video">
       <source src="./src/assets/frieren.fundo.mp4" type="video/mp4">
    </video>
+  
     <header>
         <h1 class="logo">LOJA <span>GEEK</span></h1>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="./html/mangas.html">Mangás</a></li>
-                <li><a href="#">Figures</a></li>
+                <li><a href="./html/mangas.html">Produtos</a></li>
+                <li><a href="#">Anime</a></li>
             </ul>
         </nav>
          <div class="carrinho">
             <span id="contador">Itens:0</span>
          </div>
     </header>
-     <main>
+      <main>
    <section class="cadastro">
       <h1>Preencha o formulário</h1>
       <p>para receber as melhores ofertas rapidamente</p>
-      <form action="#" method="get">
+      <form action="./html/sucesso.html" method="get">
        <fieldset>
          <legend>Formulário de inscrição</legend>
-         <label for="userName" required>Nome</label>
-          <input type="text" name="userName" placeholder="Nome completo">
-        
-          <label for="numberPhone" required>Número</label>
-          <input type="tel" name="numberPhone" placeholder="Whatsapp" pattern="[0-9]{11}">
-      
+         <label for="Name" >Nome:</label>
+          <input type="text" id="Name" name="userName" placeholder="Nome completo" required>
+         
+          <label for="date">Data de Nascimento:</label>
+          <input type="date" id="date" name="dateBorn" required>
+          
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="userEmail" placeholder="Email" required>
+
+          <label for="phone" >Número:</label>
+          <input type="tel" id="phone" name="numberPhone" placeholder="DDD + Número" pattern="[0-9]{11}" required>
+           
+          <label for="image">Coloque uma foto do seu personagem preferido de <span> Frieren:</span></label>
+          <input type="file" id="image" name="imageUser" accept="image/*">
 
 
             </fieldset>
-      
+      <button type="submit">Enviar</button>
+      <button type="reset">Limpar</button>
       </form>
       </section>
      </main>

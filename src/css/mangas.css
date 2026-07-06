@@ -156,8 +156,7 @@ nav ul li a:hover{
     gap: 20px;
 }
 
-/* Por padrão os cards ficam ocultos; o JS adiciona .mostrar
-   no tipo selecionado no <select id="opcao"> */
+
 .contcard{
     display: none;
     background: #f0f0f0;
