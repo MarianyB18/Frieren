@@ -129,7 +129,8 @@ main{
     background-color:#64edf1;
     word-spacing: 2px;
     letter-spacing: 1px;
-    border: 1px solid #34a0a4;
+    border: none;
+    box-shadow: 2px 2px 5px #64edf1;
     border-radius: 20px;
     overflow: hidden;
 
@@ -157,37 +158,5 @@ article h3{
    color: var(--text-color);
     text-shadow: 2px 2px 5px #000000;
     text-align: center;
-}
-
-.eps{
-  display: grid;
-  
-}
-
-.eps ol{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-size: 27px;
-    color: var(--text-color);
-    text-shadow: 2px 2px 5px #000000;
-   
-}
-
-
-
-article ol li a{
-    text-decoration: none;
-    color: var(--text-color);
-    text-shadow: 2px 2px 5px #000000;
-    font-size: 27px;
-   
-}
-
-img{
-    margin-top: 20px;
-    border-radius: 30px;
-    width: auto;
-    height: 200px;
 }
 
