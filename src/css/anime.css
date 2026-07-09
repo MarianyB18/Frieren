@@ -287,3 +287,31 @@ article a{
     word-spacing: 2px;
     padding-top: 10px;
 }
+
+.personagens{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    margin: 30px;
+    gap: 30px;
+   
+}
+
+.cont-pe{
+   display: flex;
+   flex-direction: column;
+}
+
+.cont-pe img{
+    width: auto;
+    height: 300px;
+    border-radius: 20px;
+   
+}
+
+.historia{
+    margin-top: 10px;
+}
+
+.historia h3{
+    text-align: center;
+}
