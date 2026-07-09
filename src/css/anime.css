@@ -26,37 +26,25 @@
 
 body{
   height: 100%;
-  background: linear-gradient(
-       to right,#f2f4f3,#64edf1
-
-    );
+ position: absolute;
   
 }
 
 
-
-main{
-    width: 100%;
-    max-width: 700px;
-   margin: 0 auto;
-   
-}
-
 header{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 5%;
+     background: linear-gradient(
+       to right,#f2f4f3,#64edf1
+
+    );
+    position:fixed;
+   
   
 }
-
-#tema{
-   background-color:  var(--three-color); 
-   width: 30px;
-   height: 30px;
-   border-radius: 50%;
-}
-
 
 .logo{
     font-weight: 700;
@@ -106,33 +94,62 @@ nav ul li a:hover{
     
 }
 
+.carrinho span{
+    color:var(--strak-color);
+    text-shadow: 2px 2px 5px #000000;
+}
+
+i{
+    color: var(--strak-color);
+    text-shadow: 2px 2px 5px #000000;
+    margin-right: 7px;
+}
+
 main{
-    margin: auto;
+   margin-top: 90px;
     width: 100%;
-    max-width: 900px;
+    overflow: hidden;
+    
+    
 }
 
 .trailer{
-    width: 100%;;
+   
+    width: 100%;
+    margin: auto;
     margin-top: 40px;
     display: block;
+    display: flex;
+    justify-content: center;
  
 }
 
 .trailer iframe{
+   
     border-radius: 20px;
     border: 1px solid #34a0a4;
     margin-bottom: 20px;
+    max-width: 900px;
+}
+
+.cont{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    
 }
 
 .descricao{
     background-color:#64edf1;
+    width: 100%;
     word-spacing: 2px;
     letter-spacing: 1px;
     border: none;
     box-shadow: 2px 2px 5px #64edf1;
     border-radius: 20px;
     overflow: hidden;
+    padding: 0 20px;
+    margin-left: 30px;
 
 }
 
@@ -152,11 +169,121 @@ article p{
     text-indent: 4px;
 }
 
-article h3{
-    font-size: 30px;
-   margin-bottom: 20px;
-   color: var(--text-color);
+
+
+article a{
+    text-decoration: none;
+    color: var(--text-color);
     text-shadow: 2px 2px 5px #000000;
-    text-align: center;
+    letter-spacing: 1px;
+    
 }
 
+.dados{
+    width: 100%;
+    background-color: #64edf1;
+    border-radius: 20px;
+    margin-right: 30px;
+
+}
+
+.lancamento p{
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    text-indent: 4px;
+    letter-spacing: 1px;
+     word-spacing: 2px;
+}
+
+.lancamento span{
+    color: var(--text-color);
+    text-shadow: 2px 2px 5px #000000;
+}
+
+.episocont{
+    margin: 30px;
+    
+}
+
+.episodios{
+   background-color: #64edf1 ;
+   border-radius: 20px;  
+   overflow: hidden;
+   padding: 5px;
+   width: 100%;
+   
+}
+
+.filtro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+}
+
+.filtro h2{
+    display: inline-block;
+    margin: auto;
+    font-size: 30px;
+    text-shadow: 2px 2px 3px #000000;
+    letter-spacing: 1px;
+}
+
+.filtro select{
+    border-radius: 10px;
+    width: 105px;
+    height: 40px;
+    padding-left: 2px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin: 10px;
+}
+
+.eps{
+    background-color: var(--text-color);
+    border-radius: 20px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,0.5fr));
+    
+}
+
+.eps img{
+   height: 300px;
+   width: 80%;
+   border-bottom-right-radius:0 ;
+   border-bottom-left-radius:20px ;
+   border-bottom-right-radius:0 ;
+   border-top-left-radius:20px ;
+   object-fit: cover;
+  
+   
+   
+}
+
+
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.conteudo h3{
+    font-size: 25px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+     text-shadow: 2px 1px 3px #ffffff;
+    
+}
+
+.conteudo p{
+    font-size: 20px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    padding-top: 10px;
+}

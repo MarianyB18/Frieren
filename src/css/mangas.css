@@ -18,18 +18,19 @@
     box-sizing: border-box;
 }
 
-body{
-    background: linear-gradient(
-       to right,#f2f4f3,#64edf1
 
-    );
-}
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 5%;
     text-shadow: 1px 1px 0 #000000;
+     background: linear-gradient(
+       to right,#f2f4f3,#64edf1
+
+    );
+    margin-bottom: 30px;
+    width: 100%;
   
 }
 
@@ -80,12 +81,24 @@ nav ul li a:hover{
     text-shadow: 0 0 10px, 0 0 20px #000000;
 }
 
+.carrinho span{
+    color:var(--strak-color);
+    text-shadow: 2px 2px 5px #000000;
+}
+
+i{
+    color: var(--strak-color);
+    text-shadow: 2px 2px 5px #000000;
+    margin-right: 7px;
+}
+
 .slider{
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   overflow: hidden;
   display: flex;
   justify-content: center;
+
 }
 
 .slides{
