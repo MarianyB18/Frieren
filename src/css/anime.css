@@ -49,14 +49,18 @@ header{
 .logo{
     font-weight: 700;
     color: var(--strak-color);
-    font-size: 25px;
-    letter-spacing: 7px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 5px #000000;
+
+    
 }
 
 .logo span{
     color: var(--fern-color);
     padding: 10px;
-    font-size: 25px;
+    font-size: 20px;
+    
 }
 
 .logo:hover{
@@ -97,6 +101,7 @@ nav ul li a:hover{
 .carrinho span{
     color:var(--strak-color);
     text-shadow: 2px 2px 5px #000000;
+    font-size: 20px;
 }
 
 i{
@@ -205,6 +210,8 @@ article a{
     
 }
 
+
+
 .episodios{
    background-color: #64edf1 ;
    border-radius: 20px;  
@@ -247,7 +254,7 @@ article a{
     margin: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(100px,0.5fr));
-    
+     
 }
 
 .eps img{
@@ -258,11 +265,11 @@ article a{
    border-bottom-right-radius:0 ;
    border-top-left-radius:20px ;
    object-fit: cover;
+   
   
    
    
 }
-
 
 
 .conteudo{

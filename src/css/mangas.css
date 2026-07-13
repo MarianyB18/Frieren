@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
 :root{
     --lime-color:#d9ed92;
     --light-color:#b5e48c;
@@ -16,6 +18,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Instrument Serif", serif;
+    font-weight: 800;
+    font-style: normal;
 }
 
 
@@ -37,14 +42,15 @@ header{
 .logo{
     font-weight: 700;
     color: var(--strak-color);
-    font-size: 25px;
-    letter-spacing: 7px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 5px #000000;
 }
 
 .logo span{
     color: var(--fern-color);
     padding: 10px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .logo:hover{
@@ -159,6 +165,8 @@ i{
 .filtro select{
    border-radius: 20px;
    padding: 10px;
+   font-size: 15px;
+   letter-spacing: 1px;
 }
 
 
@@ -228,3 +236,85 @@ i{
    font-weight:700;
 }
 
+/* ===== TABLET ===== */
+@media (max-width: 900px) {
+    header{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 20px 5%;
+    }
+
+    nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li{
+        padding: 8px 12px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+
+    #container{
+        padding: 30px 6%;
+    }
+
+    .slides{
+        height: 350px;
+    }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 600px) {
+    .logo{
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+
+    .logo span{
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    nav ul li a{
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .carrinho span{
+        font-size: 14px;
+    }
+
+    .slides{
+        height: 220px;
+    }
+
+    #container{
+        padding: 20px 4%;
+    }
+
+    #container h2{
+        font-size: 22px;
+    }
+
+    .filtro{
+        justify-content: center;
+    }
+
+    .card{
+        grid-template-columns: 1fr; /* 1 coluna no celular */
+    }
+
+    .comprar{
+        width: 80%;
+        font-size: 15px;
+    }
+
+    .conteudo{
+        font-size: 16px;
+    }
+}

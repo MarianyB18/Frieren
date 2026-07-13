@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça um dos melhores animes da atualidade">
     <link rel="stylesheet" href="./src/css/styles.css">
     <title>Protótipo 2</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <meta property="og: title" content="Universo Frieren: ">
+    <meta property="og: description" content="Conheça um dos melhores animes da atualidade">
+    <meta property="og: image" content="">
 </head>
 <body>
    <video autoplay muted loop class="video">
@@ -16,9 +20,9 @@
         <h1 class="logo">UNIVERSO <span>FRIEREN</span></h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="./html/mangas.html">Produtos</a></li>
-                <li><a href="./html/anime.html">Anime</a></li>
+                <li><a href="index.html" title="Página Home">Home</a></li>
+                <li><a href="./html/mangas.html" title="Página de Produtos">Produtos</a></li>
+                <li><a href="./html/anime.html" title="Página do anime">Anime</a></li>
             </ul>
         </nav>
          <div class="carrinho">
@@ -26,21 +30,55 @@
          </div>
     </header>
       <main>
-     <article class="titulos">
+   
+     <section class="novidades">
+        <article class="novlan">
+        <div class="lancamentos active">
+            <a href="./html/mangas.html">
+                <img src="./src/assets/promocao1.png" alt="banner de promocao">
+            </a>
+        </div>
+        <div class="lancamentos active">
+            <a href="./html/anime.html">
+                <img src="./src/assets/promocao2.png" alt="banner de promocao">
+            </a>
+        </div>
+        <div class="lancamentos active">
+            <a href="./html/anime.html" target="_parent">
+                <img src="./src/assets/promocao3.png" alt="banner de promocao">
+            </a>
+        </div>
+         </article>
+     </section>
+
+      <article class="titulos">
          <h2>Bem-vindos(as) ao <span>
             "Universo Frieren"</span></h2>
-            <p>Onde poderão acompanhar as novidades do anime, produtos, mangás e tudo relacionada ao mundo geek</p>
+            <p>Onde poderão acompanhar as novidades do anime, produtos, mangás e tudo relacionado ao mundo de Frieren</p>
      </article>
-     <section class="novidades">
-        <div class="lancamentos">
-            <a href="">
-                <img src="" alt="">
-            </a>
-            <article class="expli">
-             <h3>Lorem ipsum dolor sit.</h3>
-             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet nisi cumque eum voluptatibus, molestias ullam aut beatae eaque accusamus quidem?</p>
-            </article>
+     <section class="opcoes">
+        <article class="comple">
+        <div class="cards">
+            <img src="./src/assets/vol8.jpeg" alt="manga volume 8 de Frieren">
+            
         </div>
+        <h3>Mangás</h3>
+        </article>
+        <article class="comple">
+        <div class="cards">
+            <img src="./src/assets/figure3.jpeg" alt="Figure da Fern"> 
+              
+        </div>
+        <h3>Figures</h3>
+            </article>
+         <article class="comple">
+        <div class="cards">
+            <img src="./src/assets/ep6.jpeg" alt="">
+            
+        </div>
+        <h3>Episódios</h3>
+       </article>
+
      </section>
 
    <section class="cadastro">

@@ -11,22 +11,15 @@ let quantidadeItens =0;
  }
 
 
-  let slideAtual = 0;
+ document.addEventListener('DOMContentLoaded', () => {
+    const novlan = document.querySelectorAll('.lancamentos');
+    if (novlan.length === 0) return;
 
-  const slides =document.querySelectorAll('.slide');
+    let indiceAtual = 0;
 
-function slideShow() {
-  slides.forEach(slide => slide.classList.remove("active"));
-
-  slideAtual++;
-
-  if (slideAtual >= slides.length) {
-    slideAtual = 0;
-  }
-
-  slides[slideAtual].classList.add("active");
-
-  setTimeout(slideShow, 3000);
-}
-
-slideShow();
+    setInterval(() => {
+        novlan[indiceAtual].classList.remove('active');
+        indiceAtual = (indiceAtual + 1) % novlan.length;
+        novlan[indiceAtual].classList.add('active');
+    }, 4000);
+});

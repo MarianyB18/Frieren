@@ -27,6 +27,7 @@
 body{
   height: 100%;
   
+  
 }
 
 .video{
@@ -41,8 +42,8 @@ body{
 
 main{
     width: 100%;
-    max-width: 700px;
-   margin: 0 auto;
+
+  
    
 }
 
@@ -51,6 +52,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 20px 5%;
+  
   
 }
 
@@ -65,14 +67,16 @@ header{
 .logo{
     font-weight: 700;
     color: var(--strak-color);
-    font-size: 25px;
-    letter-spacing: 7px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 5px #000000;
 }
 
 .logo span{
     color: var(--fern-color);
     padding: 10px;
-    font-size: 25px;
+    font-size: 20px;
+  
 }
 
 .logo:hover{
@@ -112,6 +116,7 @@ nav ul li a:hover{
 .carrinho span{
     color:var(--strak-color);
     text-shadow: 2px 2px 5px #000000;
+    font-size: 20px;
 }
 
 i{
@@ -120,50 +125,139 @@ i{
     margin-right: 7px;
 }
 
+
+
+
+
+.novidades{
+    width: 100%; 
+    height:auto;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  
+  
+
+}
+
+.novlan{
+    position: relative;
+    width: 95%;
+    height: 700px;
+}
+
+.lancamentos{
+   position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.lancamentos.active{
+    display: block;
+    opacity: 1;
+}
+
+.lancamentos img{
+    width: 100%;
+    height: 700px;
+   object-fit: cover; 
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+   border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
 .titulos{
     display: flex;
     flex-direction: column;
+    margin-bottom: 40px;
   
   
 }
 
 .titulos h2{
-    font-size: 40px;
+    font-size: 50px;
     color: var(--light-color);
     text-shadow: 2px 2px 5px #000000;
     letter-spacing: 1px;
     word-spacing: 2px;
-    margin: auto;
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
   
 }
 
 .titulos p{
     color: var(--lime-color);
     text-shadow: 2px 2px 5px #000000;
-    margin: auto;
+    display: flex;
+    justify-content: center;
     letter-spacing: 1px;
     word-spacing: 2px;
+    font-size: 28px;
 
 }
 
-.novidades{
-    width: 100%;
-    background-color: var(--emerald-color);
-    border-radius: 20px;
-    overflow: hidden;
+.opcoes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 30px;
+    margin: 20px;
+     
+    
+
 }
 
-.lancamentos{
-    width: 100%;
+.cards{
+    background-color: var(--light-color);
+    height: 300px;
     display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: none;
+   
+    
+    
+
+}
+
+.cards:hover{
+     transform: translateY(-5px);
+}
+
+.cards img{
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  
+}
+
+.comple h3{
+    color: var(--light-color);
+    text-shadow: 2px 1px 3px #000000;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30px;
+    letter-spacing: 2px;
 
 }
 
 .cadastro{
-     
+    width: 70%;
+    margin: auto;
+    justify-content: center;
     display: flex;
     align-items: center;
-  flex-direction: column;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 .cadastro h2{
@@ -192,7 +286,7 @@ i{
 form{
     background-color: var(--emerald-color);
     border-radius: 17px;
-    width: 100%;
+    width: 80%;
     
     
    
@@ -273,3 +367,128 @@ button[type="submit"]:hover{
     transform: scale(1.2);
 }
 
+
+/* ===== TABLET ===== */
+@media (max-width: 900px) {
+    header{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 20px 5%;
+    }
+
+    nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li{
+        padding: 8px 12px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+
+    .novlan{
+        height: 400px;
+    }
+
+    .lancamentos img{
+        height: 400px;
+    }
+
+    .titulos h2{
+        font-size: 34px;
+        margin-top: 30px;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .titulos p{
+        font-size: 20px;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .cadastro{
+        width: 90%;
+    }
+
+    form{
+        width: 100%;
+    }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 600px) {
+    .logo{
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    .logo span{
+        font-size: 15px;
+        padding: 4px;
+    }
+
+    nav ul li a{
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+    .carrinho span{
+        font-size: 13px;
+    }
+
+    .novlan{
+        height: 220px;
+    }
+
+    .lancamentos img{
+        height: 220px;
+    }
+
+    .titulos h2{
+        font-size: 24px;
+    }
+
+    .titulos p{
+        font-size: 16px;
+    }
+
+    .opcoes{
+        grid-template-columns: 1fr;
+        margin: 15px;
+    }
+
+    .cards{
+        height: 220px;
+    }
+
+    .comple h3{
+        font-size: 22px;
+    }
+
+    .cadastro h2{
+        font-size: 28px;
+    }
+
+    .cadastro p{
+        font-size: 18px;
+    }
+
+    legend{
+        font-size: 22px;
+    }
+
+    input{
+        width: 100%;
+    }
+
+    button{
+        width: 90px;
+        margin-left: 10px;
+    }
+}
